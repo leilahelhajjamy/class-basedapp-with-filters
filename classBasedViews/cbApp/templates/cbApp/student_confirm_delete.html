@@ -1,0 +1,17 @@
+<html>
+<title>Delete</title>
+
+
+
+<body>
+<b>You really want te delete this student  {{student.firstName}}</b>
+<form methos="POST">
+    <input type="submit"  value="Confirm">
+    <a href="/{{student.id}}">Cancel</a>
+    {% csrf_token %}
+</form>
+
+
+
+</body>
+</html>
