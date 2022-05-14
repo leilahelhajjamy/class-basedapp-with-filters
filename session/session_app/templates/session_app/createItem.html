@@ -1,0 +1,14 @@
+
+
+<html>
+<body>
+<form method="post">
+
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" value="save">
+    <a href="/displayCart"></a>
+
+</form>
+</body>
+</html>

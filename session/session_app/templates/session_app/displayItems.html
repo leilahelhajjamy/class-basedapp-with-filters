@@ -1,0 +1,22 @@
+<html>
+<body>
+<table>
+    <thead>
+    <th>
+        Product name
+    </th>
+    <th>
+        Quantity
+    </th>
+    </thead>
+    {% for key,value in request.COOKIES.items %}
+       <tr>
+        <td>{{key}}</td>
+        <td>{{value}}</td>
+
+    </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>
